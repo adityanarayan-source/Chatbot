@@ -1,0 +1,10 @@
+{
+  "setupMode": "code-repo",
+  "aiTools": [
+    "codex"
+  ],
+  "scaffold_id": "fd9e8277-a41a-4120-873f-3d79a9e21f53",
+  "scaffold_name": "Chatbot",
+  "origin": null,
+  "upstream": null
+}
