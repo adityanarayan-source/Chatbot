@@ -23,7 +23,8 @@ Read `.mex/AGENTS.md`, then this file, before project work. Load the context and
 ## Current Project State
 **Working:**
 - `app.py` initializes a Gemini chat model and exposes a Gradio `ChatInterface`.
-- Conversation history is converted into LangChain messages before model invocation.
+- Conversation history is stored in SQLite per Gradio session and converted into role-aware LangChain messages before model invocation.
+- Gradio 6 OpenAI-style history dictionaries and legacy tuple history are both supported.
 
 **Not yet built:**
 - Automated tests, linting, and build tooling are not declared.
@@ -32,6 +33,7 @@ Read `.mex/AGENTS.md`, then this file, before project work. Load the context and
 **Known issues:**
 - The required `GOOGLE_API_KEY` environment contract is not validated explicitly before model construction.
 - The project brief does not identify a dependency manifest or reproducible installation command.
+- A stale local proxy configuration (`127.0.0.1:9`) can block Gemini requests; launch the app without those proxy variables when that proxy is unavailable.
 
 ## Routing Table
 | Task type | Load |
