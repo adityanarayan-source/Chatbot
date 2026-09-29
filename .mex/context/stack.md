@@ -25,7 +25,7 @@ last_updated: 2026-09-28
 - **Python** — runtime and application language; exact version is `[TO DETERMINE]`.
 - **Gradio** — browser UI framework, used through `ChatInterface`.
 - **LangChain** — message and model integration layer.
-- **Google Gemini** — remote LLM provider, configured as `gemini-3.8-flash`.
+- **Google Gemini** — remote LLM provider, configured as `gemini-3.5-flash-lite` by default and overrideable with `GEMINI_MODEL`.
 
 ## Key Libraries
 - **`gradio`** — creates the conversational UI and calls the callback.

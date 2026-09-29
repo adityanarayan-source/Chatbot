@@ -23,6 +23,7 @@ Read `.mex/AGENTS.md`, then this file, before project work. Load the context and
 ## Current Project State
 **Working:**
 - `app.py` initializes a Gemini chat model and exposes a Gradio `ChatInterface`.
+- The default Gemini model is `gemini-3.5-flash-lite`, selected for low-latency chatbot responses; `GEMINI_MODEL` can override it.
 - Conversation history is stored in SQLite per Gradio session and converted into role-aware LangChain messages before model invocation.
 - Gradio 6 OpenAI-style history dictionaries and legacy tuple history are both supported.
 

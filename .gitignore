@@ -1,2 +1,5 @@
 .env
 .venv
+chat_history.db
+__pycache__
+.mex/graph.db
